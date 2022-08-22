@@ -20,9 +20,10 @@ UNIVERSAL_PIPELINE keyword will be automatically defined the target as Universal
 
 	#else
 		// Specific to HDRenderPipeline
-		#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightLoop/LightLoop.cs.hlsl"
+		//#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightLoop/LightLoop.cs.hlsl"
 		#define DEFINE_SHADOWPASS SHADERPASS_SHADOWS
-		uint featureFlags = LIGHT_FEATURE_MASK_FLAGS_OPAQUE;
+		
+		// uint featureFlags = LIGHT_FEATURE_MASK_FLAGS_OPAQUE;
 	#endif
 #endif
 
@@ -111,6 +112,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 			// Main Directional light
 			facingDirectionWS = -_LightDirection;
 		#endif
+/*		
 	#else
 		// HDRP
 	
@@ -142,7 +144,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 				}
 			}
 		}
-	
+*/	
 	#endif
 
 #else
