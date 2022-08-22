@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b1777cd35fb1b0d4a843a93e5b05c123
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - simulationShader: {fileID: 7200000, guid: 0bc8affb054cb2647bf6347222046e0e, type: 3}
+  - parentTransform: {instanceID: 0}
+  - windZone: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
