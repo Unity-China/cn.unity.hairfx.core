@@ -16,7 +16,7 @@ While this hair system has a lot more work remains to be done, we’re sharing w
 ## Note
 - This hair system is not the same hair system that show in ENEMIES demo video, which is separate hair system that created by Unity DemoTeam, you can find it in [github](https://github.com/Unity-Technologies/com.unity.demoteam.hair)
 
-- （URP only）Included a Custom Hair Shader for ShaderGraph. It can be removed if you are using HDRP.
+- （URP only）This Package included a Custom Hair Shader for ShaderGraph. It can be removed if you are using HDRP.
 
 ## Usage
 
