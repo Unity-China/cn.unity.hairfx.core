@@ -3,7 +3,6 @@
   "description": "The Unity HairFX is a strands based real-time hair rendering and simulation system, this hair system is based on AMD's TressFX opensource frameworks. \n\nSupports Rendering Pipineline:\nUniversal Render Pipeline (URP) and High Definition Render Pipeline (HDRP).\n\nSupport Platforms:\nFrom mobile to high-end consoles and PC.\n\nPrerequisite\r:\nURP/HDRP version 12.x.x & Unity Editor version 2021.2.x  or Newer\n\nAssetStore Demo:\nURP: https://u3d.as/2Ue8\nHDRP: https://u3d.as/2Ue7\n\nGitHub: https://github.com/Unity-China/com.unity.hairfx",
   "version": "0.9.0",
   "unity": "2021.2",
-  "unityRelease": "0f1",
   "displayName": "HairFX",
   "keywords": [
     "unity",
