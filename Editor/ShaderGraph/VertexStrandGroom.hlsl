@@ -18,12 +18,10 @@ UNIVERSAL_PIPELINE keyword will be automatically defined the target as Universal
 
 		#define HAIRFX_MATERIAL // override _LightDirection in custom Varying.hlsl
 
-	#else
+	// #else
 		// Specific to HDRenderPipeline
-		//#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightLoop/LightLoop.cs.hlsl"
-		#define DEFINE_SHADOWPASS SHADERPASS_SHADOWS
+		// #define DEFINE_SHADOWPASS SHADERPASS_SHADOWS
 		
-		// uint featureFlags = LIGHT_FEATURE_MASK_FLAGS_OPAQUE;
 	#endif
 #endif
 
@@ -112,39 +110,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 			// Main Directional light
 			facingDirectionWS = -_LightDirection;
 		#endif
-/*		
-	#else
-		// HDRP
-	
-		if (featureFlags & LIGHTFEATUREFLAGS_DIRECTIONAL)
-		{
-			if (_DirectionalShadowIndex >= 0)
-			{
-				DirectionalLightData light = _DirectionalLightDatas[_DirectionalShadowIndex];
-				facingDirectionWS = light.forward;
-			}
-		}
-		
-		if(featureFlags & LIGHTFEATUREFLAGS_PUNCTUAL)
-		{
-			uint lightCount, lightStart;
-			lightCount = _PunctualLightCount;
-			lightStart = 0;
-			uint v_lightListOffset = 0;
-			uint v_lightIdx = lightStart;
-			while (v_lightListOffset < lightCount)
-			{
-				uint s_lightIdx = v_lightIdx;
-					
-				if (s_lightIdx >= v_lightIdx)
-				{
-					v_lightListOffset++;
-					LightData light = _LightDatas[s_lightIdx];
-					facingDirectionWS = v - light.positionRWS;
-				}
-			}
-		}
-*/	
+
 	#endif
 
 #else
