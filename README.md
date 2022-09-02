@@ -1,4 +1,4 @@
-# com.unity.hairfx.core
+# cn.unity.hairfx.core
 Unity HairFX is a strands based hair system, this supports for Universal Render Pipeline (URP) and High Definition Render Pipeline (HDRP). This hair system is based on open source AMD-TressFX hair framework.
 
 ## Requirements
@@ -24,7 +24,7 @@ Declare the package and its dependencies as git dependencies in `Packages/manife
 
 ```
 "dependencies": {
-    "com.unity.hairfx.core": "https://github.com/Unity-China/com.unity.hairfx.core.git",
+    "cn.unity.hairfx.core": "https://github.com/Unity-China/cn.unity.hairfx.core.git",
     ...
 }
 ```
