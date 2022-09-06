@@ -14,9 +14,10 @@ This package includes a new strand base hair system that integrated from the AMD
 While this hair system has a lot more work remains to be done, we’re sharing what we have at the moment. You’re free to use or modify it to fit your productions and build if needed.
 
 ## Note
+- The TressFX Exporter plugin for Maya is in Libray/PackageCache/cn.unity.hairfx.core/**Maya_TressFX_Exporter~** folder or download [here](https://github.com/Unity-China/cn.unity.hairfx.core/tree/main/Maya_TressFX_Exporter~)
+
 - This hair system is not the same hair system that show in ENEMIES demo video, which is separate hair system that created by Unity DemoTeam, you can find it in [github](https://github.com/Unity-Technologies/com.unity.demoteam.hair)
 
-- （URP only）This Package included a Custom Hair Shader for ShaderGraph. It can be removed if you are using HDRP.
 
 ## Usage
 
