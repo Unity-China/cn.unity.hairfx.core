@@ -18,9 +18,9 @@ UNIVERSAL_PIPELINE keyword will be automatically defined the target as Universal
 
 		#define HAIRFX_MATERIAL // override _LightDirection in custom Varying.hlsl
 
-	// #else
+	#else
 		// Specific to HDRenderPipeline
-		// #define DEFINE_SHADOWPASS SHADERPASS_SHADOWS
+		#define DEFINE_SHADOWPASS SHADERPASS_SHADOWS
 		
 	#endif
 #endif
@@ -110,7 +110,8 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 			// Main Directional light
 			facingDirectionWS = -_LightDirection;
 		#endif
-
+	#else
+		facingDirectionWS = -_ViewMatrix[2];
 	#endif
 
 #else
