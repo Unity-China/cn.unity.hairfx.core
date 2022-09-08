@@ -111,6 +111,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 			facingDirectionWS = -_LightDirection;
 		#endif
 	#else
+		//ref: HDAdditionlLightData.cs #2346 and HDShadowAtlas.cs #321
 		facingDirectionWS = -_ViewMatrix[2];
 	#endif
 
