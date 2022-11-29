@@ -220,7 +220,7 @@ namespace HairFX
                 float distance = (Camera.main.transform.position - transform.TransformPoint(m_WorldBounds.center)).magnitude;
                 m_hairObjects[i].UpdateRenderingParameters(distance);
                 hairSubMeshDescriptors[i].indexCount = (int)(m_hairObjects[i].LODHairDensity * m_hairObjects[i].hairMeshTriangles.Length);
-                hairMesh.SetSubMesh(i, hairSubMeshDescriptors[i]);
+                hairMesh.SetSubMesh(i, hairSubMeshDescriptors[i], MeshUpdateFlags.DontRecalculateBounds);
 
                 // set PropertyBlock
                 meshRenderer.SetPropertyBlock(m_hairObjects[i].materialPropertyBlock, i);
