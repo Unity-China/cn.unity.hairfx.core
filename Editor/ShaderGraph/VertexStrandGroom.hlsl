@@ -94,9 +94,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 	
 	float ratio = (_EnableThinTip) ? thicknessCoeff : 1.0;
 
-
 	float3 facingDirectionWS = float3(0.0, -1.0, 0.0);
-
 	
 #if (SHADERPASS == DEFINE_SHADOWPASS)
 	HairWidth *= HairShadowWidth;
