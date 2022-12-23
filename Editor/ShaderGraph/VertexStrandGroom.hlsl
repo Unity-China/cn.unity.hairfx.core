@@ -112,7 +112,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 		#endif
 	#else
 		//ref: HDAdditionlLightData.cs #2346 and HDShadowAtlas.cs #321
-		facingDirectionWS = -_ViewMatrix[2];
+		facingDirectionWS = -_ViewMatrix[2].xyz;
 	#endif
 
 #else
@@ -140,7 +140,7 @@ void GetExpandedVertex_float(uint vertexId, float HairShadowWidth, float HairWid
 #ifdef UNITY_SHADER_VARIABLES_INCLUDED
 	// HDRP
 	// Ref: ShaderVariables.hlsl #339
-	position = mul(GetRawUnityWorldToObject(), float4(position, 1.0));
+	position = mul(GetRawUnityWorldToObject(), float4(position, 1.0)).xyz;
 	normal = normalize(mul((float3x3)GetRawUnityWorldToObject(), normal));
 	tangent = normalize(mul((float3x3)GetRawUnityWorldToObject(), tangent));
 #endif
